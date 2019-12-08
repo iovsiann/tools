@@ -13,3 +13,5 @@ git config --global credential.helper "cache --timeout 7200"
 wget https://www.realvnc.com/download/file/vnc.files/VNC-Server-6.6.0-Linux-x64.deb
 sudo apt install ./VNC-Server-6.6.0-Linux-x64.deb
 rm ./VNC-Server-6.6.0-Linux-x64.deb
+sudo systemctl start vncserver-x11-serviced
+sudo systemctl enable vncserver-x11-serviced
