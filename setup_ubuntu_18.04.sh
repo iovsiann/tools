@@ -10,3 +10,6 @@ sed -i 's/HISTSIZE=[0-9]\+/HISTSIZE=/' .bashrc
 sed -i 's/HISTFILESIZE=[0-9]\+/HISTFILESIZE=/' .bashrc
 git config credential.helper store
 git config --global credential.helper "cache --timeout 7200"
+wget https://www.realvnc.com/download/file/vnc.files/VNC-Server-6.6.0-Linux-x64.deb
+sudo apt install ./VNC-Server-6.6.0-Linux-x64.deb
+rm ./VNC-Server-6.6.0-Linux-x64.deb
