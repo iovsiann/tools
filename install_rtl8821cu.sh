@@ -1,5 +1,6 @@
 #!/bin/sh
 # 802.11 AC RTL8821CU
+# lsusb returns 0bda:c811 Realtek Semiconductor Corp.
 # https://ubuntuforums.org/showthread.php?t=2407625
 
 sudo apt update
