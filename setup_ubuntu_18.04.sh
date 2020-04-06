@@ -1,5 +1,6 @@
 #!/bin/sh
 
+rm ~/examples.desktop
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get remove unattended-upgrades firefox -y
