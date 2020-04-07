@@ -1,3 +1,6 @@
+#!/bin/bash
+# Launch key tele-op on remote PC
+
 # gnome-terminal -e "roscore"
 # sleep 2
 gnome-terminal -e "roslaunch turtlebot3_bringup turtlebot3_remote.launch"
