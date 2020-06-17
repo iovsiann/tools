@@ -16,4 +16,4 @@ cd ~/catkin_ws/src/turtlebot3
 rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
 cd ~/catkin_ws && catkin_make
 rosrun turtlebot3_bringup create_udev_rules
-ipconfig
+ifconfig
