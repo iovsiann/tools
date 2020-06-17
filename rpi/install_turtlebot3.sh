@@ -7,10 +7,8 @@ wstool update -j8 -t src
 rosdep install --from-paths src --ignore-src --rosdistro melodic -y
 sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/melodic
 
-catkin_ws
 mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/
-catkin_make
+cd ~/catkin_ws/ && catkin_make
 echo "source $HOME/catkin_ws/devel/setup.bash" >> ~/.bashrc
 
 cd ~/catkin_ws/src
