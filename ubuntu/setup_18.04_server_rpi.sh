@@ -14,3 +14,5 @@ sudo iw reg set US
 
 # https://linuxconfig.org/ubuntu-20-04-connect-to-wifi-from-command-line
 # Change WiFi SSID to 5G
+
+# resize disk here
