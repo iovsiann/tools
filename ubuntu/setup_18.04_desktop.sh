@@ -5,7 +5,6 @@ sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get remove unattended-upgrades firefox -y
 sudo apt-get install git curl chromium-browser openssh-server terminator net-tools -y
-git config credential.helper store
 git config --global credential.helper 'cache --timeout=7200'
 sudo ntpdate ntp.ubuntu.com
 sudo iw reg set US
