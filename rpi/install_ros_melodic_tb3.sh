@@ -8,19 +8,8 @@ sudo rosdep init
 rosdep update
 mkdir ~/ros_ws
 cd ~/ros_ws
-rosinstall_generator desktop --rosdistro melodic --deps --wet-only --tar > melodic-desktop-wet.rosinstall
-wstool init -j4 src melodic-desktop-wet.rosinstall
-
-cd
-mkdir -p ~/ros_ws/external_src
-cd ~/ros_ws/external_src
-wget https://sourceforge.net/projects/assimp/files/assimp-3.1/assimp-3.1.1_no_test_models.zip/download -O assimp-3.1.1_no_test_models.zip
-unzip assimp-3.1.1_no_test_models.zip
-cd assimp-3.1.1/
-cmake .
-make
-sudo make install
-sudo apt install libogre-1.9-dev
+rosinstall_generator roscomm common_msgs common_msgs rosserial image_common image_transport_plugins diagnostics nodelet_core --rosdistro melodic --deps --wet-only --tar > melodic-tb3-wet.rosinstall
+wstool init -j4 src melodic-tb3-wet.rosinstall
 
 cd ~/ros_ws
 rosdep install --from-paths src --ignore-src --rosdistro melodic -y
