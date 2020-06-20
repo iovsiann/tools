@@ -12,3 +12,5 @@ cd ~/catkin_ws && catkin_make
 rosrun turtlebot3_bringup create_udev_rules
 sudo apt install ntpdate
 sudo ntpdate ntp.ubuntu.com
+echo source /home/pi/catkin_ws/devel/setup.bash >> ~/.bashrc
+
