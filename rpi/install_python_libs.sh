@@ -8,3 +8,6 @@ python3 get-pip.py && rm get-pip.py
 git clone https://github.com/iovsiann/pyaudio
 cd pyaudio && pypy3 -m pip install .
 cd && rm -rf pyaudio
+
+pip3 install pvporcupine pyyaml rospkg webrtcvad
+pypy3 -m pip install pvporcupine pyyaml rospkg webrtcvad
