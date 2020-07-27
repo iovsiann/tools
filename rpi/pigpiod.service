@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=forking
-ExecStart=/usr/local/bin/pigpiod -s 10 -t 0 -x 12288 -m
+ExecStart=/usr/bin/pigpiod -s 10 -t 0 -x 12288 -m
 Restart=always
 RestartSec=5
 KillSignal=SIGKILL
