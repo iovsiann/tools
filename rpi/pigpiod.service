@@ -4,7 +4,11 @@ After=network.target
 
 [Service]
 Type=forking
-ExecStart=/usr/bin/pigpiod -s 10 -t 0 -x 268447684 -m
+# GPIO 12, 13 only
+#ExecStart=/usr/bin/pigpiod -s 10 -t 0 -x 12288 -m
+# GPIO 12, 13, 27 only
+#ExecStart=/usr/bin/pigpiod -s 10 -t 0 -x 268447684 -m
+ExecStart=/usr/bin/pigpiod -s 10 -t 0 -m
 Restart=always
 RestartSec=5
 KillSignal=SIGKILL
