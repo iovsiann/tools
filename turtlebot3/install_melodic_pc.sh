@@ -16,11 +16,11 @@ name_ros_version=${name_ros_version:="melodic"}
 name_catkin_workspace=${name_catkin_workspace:="catkin_ws"}
 
 echo "[Update the package lists and upgrade them]"
-sudo apt-get update -y
-sudo apt-get upgrade -y
+sudo apt update -y
+sudo apt upgrade -y
 
 echo "[Install build environment, the chrony, ntpdate and set the ntpdate]"
-sudo apt-get install -y chrony ntpdate build-essential
+sudo apt install -y chrony ntpdate build-essential
 sudo ntpdate ntp.ubuntu.com
 
 echo "[Add the ROS repository]"
@@ -44,20 +44,20 @@ else
 fi
 
 echo "[Update the package lists and upgrade them]"
-sudo apt-get update -y
-sudo apt-get upgrade -y
+sudo apt update -y
+sudo apt upgrade -y
 
 echo "[Install the ros-desktop-full and all rqt plugins]"
-sudo apt-get install -y ros-$name_ros_version-desktop-full ros-$name_ros_version-rqt-*
+sudo apt install -y ros-$name_ros_version-desktop-full ros-$name_ros_version-rqt-*
 
 echo "[Initialize rosdep]"
-sudo apt-get install python-rosdep
+sudo apt install python-rosdep
 sudo sh -c "rosdep init"
 rosdep update
 
 echo "[Environment setup and getting rosinstall]"
 source /opt/ros/$name_ros_version/setup.sh
-sudo apt-get install -y python-rosinstall
+sudo apt install -y python-rosinstall
 
 echo "[Make the catkin workspace and test the catkin_make]"
 mkdir -p $HOME/$name_catkin_workspace/src
@@ -83,7 +83,7 @@ sh -c "echo \"export ROS_HOSTNAME=localhost\" >> ~/.bashrc"
 
 source $HOME/.bashrc
 
-sudo apt-get install ros-melodic-joy ros-melodic-teleop-twist-joy ros-melodic-teleop-twist-keyboard ros-melodic-laser-proc ros-melodic-rgbd-launch ros-melodic-depthimage-to-laserscan ros-melodic-rosserial-arduino ros-melodic-rosserial-python ros-melodic-rosserial-server ros-melodic-rosserial-client ros-melodic-rosserial-msgs ros-melodic-amcl ros-melodic-map-server ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro ros-melodic-compressed-image-transport ros-melodic-rqt-image-view ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers ros-melodic-joint-state-publisher-gui
+sudo apt install ros-melodic-joy ros-melodic-teleop-twist-joy ros-melodic-teleop-twist-keyboard ros-melodic-laser-proc ros-melodic-rgbd-launch ros-melodic-depthimage-to-laserscan ros-melodic-rosserial-arduino ros-melodic-rosserial-python ros-melodic-rosserial-server ros-melodic-rosserial-client ros-melodic-rosserial-msgs ros-melodic-amcl ros-melodic-map-server ros-melodic-move-base ros-melodic-urdf ros-melodic-xacro ros-melodic-compressed-image-transport ros-melodic-rqt-image-view ros-melodic-gmapping ros-melodic-navigation ros-melodic-interactive-markers ros-melodic-joint-state-publisher-gui
 
 cd ~/catkin_ws/src/
 git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
