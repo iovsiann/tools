@@ -8,7 +8,6 @@ sudo rosdep init
 rosdep update
 mkdir ~/ros_ws
 cd ~/ros_ws
-#rosinstall_generator roscomm common_msgs common_msgs rosserial image_common image_transport_plugins diagnostics nodelet_core --rosdistro melodic --deps --wet-only --tar > melodic-tb3-wet.rosinstall
 rosinstall_generator roscomm common_msgs common_msgs rosserial rosserial_server image_common image_transport_plugins diagnostics nodelet_core --rosdistro melodic --deps --wet-only --tar > melodic-tb3-wet.rosinstall
 wstool init -j4 src melodic-tb3-wet.rosinstall
 
