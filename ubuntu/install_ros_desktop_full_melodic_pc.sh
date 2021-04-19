@@ -1,5 +1,5 @@
 #!/bin/sh
-# Install ROS Melodic on Ubuntu 18.04.3
+# Install ROS Melodic desktop_full (with GUI) on Ubuntu 18.04
 # http://wiki.ros.org/melodic/Installation/Ubuntu
 
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
