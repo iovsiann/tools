@@ -15,3 +15,5 @@ sudo apt install ./VNC-Server-6.6.0-Linux-x64.deb
 rm ./VNC-Server-6.6.0-Linux-x64.deb
 sudo systemctl start vncserver-x11-serviced
 sudo systemctl enable vncserver-x11-serviced
+gsettings set org.gnome.desktop.background picture-options 'none'
+gsettings set org.gnome.desktop.background primary-color '#000000'
