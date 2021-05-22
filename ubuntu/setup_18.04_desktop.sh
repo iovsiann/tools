@@ -17,3 +17,4 @@ sudo systemctl start vncserver-x11-serviced
 sudo systemctl enable vncserver-x11-serviced
 gsettings set org.gnome.desktop.background picture-options 'none'
 gsettings set org.gnome.desktop.background primary-color '#000000'
+sudo ubuntu-drivers autoinstall
