@@ -20,3 +20,4 @@ gsettings set org.gnome.desktop.background primary-color '#000000'
 # ubuntu-drivers devices
 # sudo ubuntu-drivers autoinstall
 # https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-18-04-bionic-beaver-linux
+# https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-21-04
