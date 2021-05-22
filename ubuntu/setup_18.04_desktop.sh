@@ -17,4 +17,6 @@ sudo systemctl start vncserver-x11-serviced
 sudo systemctl enable vncserver-x11-serviced
 gsettings set org.gnome.desktop.background picture-options 'none'
 gsettings set org.gnome.desktop.background primary-color '#000000'
-sudo ubuntu-drivers autoinstall
+# ubuntu-drivers devices
+# sudo ubuntu-drivers autoinstall
+# https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-18-04-bionic-beaver-linux
