@@ -29,3 +29,4 @@ rosdep install --from-paths src --ignore-src --rosdistro melodic -y
 
 sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/melodic -j4
 echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source /opt/ros/melodic/setup.bash
