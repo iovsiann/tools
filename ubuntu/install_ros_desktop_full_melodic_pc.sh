@@ -19,3 +19,8 @@ sudo apt install ros-melodic-joint-state-publisher-gui -y
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 catkin_make
+# catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
+echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc 
+source ~/catkin_ws/devel/setup.bash 
+
+# export ROS_PACKAGE_PATH=/your/path/to/workspace:$ROS_PACKAGE_PATH
