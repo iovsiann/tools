@@ -11,7 +11,7 @@ sudo apt install ros-melodic-desktop-full -y
 sudo rosdep init
 rosdep update
 
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+echo 'source /opt/ros/melodic/setup.bash' >> ~/.bashrc
 source /opt/ros/melodic/setup.bash
 sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential -y
 sudo apt install ros-melodic-joint-state-publisher-gui -y
@@ -23,4 +23,5 @@ catkin_make
 echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc 
 source ~/catkin_ws/devel/setup.bash 
 
-# export ROS_PACKAGE_PATH=/your/path/to/workspace:$ROS_PACKAGE_PATH
+echo 'export ROS_MASTER_URI=http://localhost:11311' >> ~/.bashrc
+echo 'export ROS_HOSTNAME=localhost' >> ~/.bashrc
