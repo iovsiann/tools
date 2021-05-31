@@ -19,5 +19,5 @@ rosdep update
 rosdep install --from-paths src --ignore-src --rosdistro=${ROS_DISTRO} -y
 source ~/catkin_ws/src/cartographer/scripts/install_abseil.sh
 # sudo apt-get remove ros-${ROS_DISTRO}-abseil-cpp
-echo 'source ~/catkin_ws/install_isolated/setup.bash' >> ~/.bashrc
 catkin_make_isolated --install --use-ninja
+echo 'source ~/catkin_ws/install_isolated/setup.bash' >> ~/.bashrc
