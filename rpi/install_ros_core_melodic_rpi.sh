@@ -17,7 +17,7 @@ cd ~/ros_ws
 rosdep install --from-paths src --ignore-src --rosdistro melodic -y
 
 sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release --install-space /opt/ros/melodic -j4
-echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+echo 'source /opt/ros/melodic/setup.bash' >> ~/.bashrc
 source /opt/ros/melodic/setup.sh
 
 mkdir -p ~/catkin_ws/src
@@ -26,3 +26,6 @@ catkin_make
 # catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
 echo 'source ~/catkin_ws/devel/setup.bash' >> ~/.bashrc 
 source ~/catkin_ws/devel/setup.bash
+
+echo 'export ROS_MASTER_URI=http://localhost:11311' >> ~/.bashrc
+echo 'export ROS_HOSTNAME=localhost' >> ~/.bashrc
