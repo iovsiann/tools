@@ -7,12 +7,11 @@ sudo apt-get install -y python-wstool python-rosdep ninja-build stow
 
 if [ ! -d "~/catkin_ws" ] 
 then
-    cd
-    mkdir catkin_ws
-    wstool init src
+    mkdir ~/catkin_ws
 fi
 
 cd ~/catkin_ws
+wstool init src
 wstool merge -t src https://raw.githubusercontent.com/cartographer-project/cartographer_ros/master/cartographer_ros.rosinstall
 wstool update -t src
 sudo rosdep init
