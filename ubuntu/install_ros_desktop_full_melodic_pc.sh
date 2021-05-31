@@ -15,3 +15,7 @@ echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 source /opt/ros/melodic/setup.bash
 sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential -y
 sudo apt install ros-melodic-joint-state-publisher-gui -y
+
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/
+catkin_make
