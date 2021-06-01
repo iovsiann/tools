@@ -25,3 +25,4 @@ source ~/catkin_ws/devel/setup.bash
 
 echo 'export ROS_MASTER_URI=http://localhost:11311' >> ~/.bashrc
 echo 'export ROS_HOSTNAME=localhost' >> ~/.bashrc
+# echo export ROS_HOSTNAME=$(hostname -I | awk '{print $1}') >> ~/.bashrc
