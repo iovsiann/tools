@@ -1,6 +1,7 @@
 
 #!/bin/sh
-# Install Google Cartographer on Ubuntu 18.04
+# Build Google Cartographer for ROS from source (using catkin_ws) on Ubuntu 18.04
+# TODO fix build failing
 
 sudo apt-get update
 sudo apt-get install -y python-wstool python-rosdep ninja-build stow
