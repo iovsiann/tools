@@ -16,6 +16,8 @@ source /opt/ros/melodic/setup.bash
 sudo apt install python-rosinstall python-rosinstall-generator python-wstool build-essential -y
 sudo apt install ros-melodic-joint-state-publisher-gui -y
 
-echo 'export ROS_MASTER_URI=http://localhost:11311' >> ~/.bashrc
-echo 'export ROS_HOSTNAME=localhost' >> ~/.bashrc
-# echo export ROS_HOSTNAME=$(hostname -I | awk '{print $1}') >> ~/.bashrc
+# echo 'export ROS_MASTER_URI=http://localhost:11311' >> ~/.bashrc
+# echo 'export ROS_HOSTNAME=localhost' >> ~/.bashrc
+
+echo export ROS_MASTER_URI=http://$(hostname -I | awk '{print $1}'):11311 >> ~/.bashrc
+echo export ROS_HOSTNAME=$(hostname -I | awk '{print $1}') >> ~/.bashrc
