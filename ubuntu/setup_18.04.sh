@@ -19,6 +19,19 @@ gsettings set org.gnome.desktop.background picture-options 'none'
 gsettings set org.gnome.desktop.background primary-color '#000000'
 sudo apt install python-pip python3-pip -y
 rmdir Video Templates Music Documents Pictures Public
+
+# Disable automatic upgrades GUI
+cat > 20auto-upgrades <<EOF
+APT::Periodic::Update-Package-Lists "0";
+APT::Periodic::Download-Upgradeable-Packages "0";
+APT::Periodic::AutocleanInterval "0";
+APT::Periodic::Unattended-Upgrade "1";
+EOF
+chmod g=r 20auto-upgrades
+sudo chown root:root 20auto-upgrades
+sudo mv 20auto-upgrades /etc/apt/apt.conf.d/
+rm .sudo_as_admin_successful
+
 # ubuntu-drivers devices
 # sudo ubuntu-drivers autoinstall
 # https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-18-04-bionic-beaver-linux
