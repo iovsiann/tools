@@ -32,6 +32,11 @@ sudo chown root:root 20auto-upgrades
 sudo mv 20auto-upgrades /etc/apt/apt.conf.d/
 rm .sudo_as_admin_successful
 
+
+cd; cat >> .bashrc <<EOF
+alias disp="export DISPLAY=':1'"
+EOF
+
 # ubuntu-drivers devices
 # sudo ubuntu-drivers autoinstall
 # https://linuxconfig.org/how-to-install-the-nvidia-drivers-on-ubuntu-18-04-bionic-beaver-linux
