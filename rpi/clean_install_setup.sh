@@ -1,7 +1,6 @@
 #!/bin/bash
 # Setup after a fresh install
 
-git config --global user.email "ilya@ovsy.com"
 git config --global user.name "Ilia O."
 git config --global credential.helper 'cache --timeout=7200'
 sed -i 's/HISTSIZE=[0-9]\+/HISTSIZE=/' .bashrc
