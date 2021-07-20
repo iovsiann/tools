@@ -11,3 +11,5 @@ sed -i 's/HISTFILESIZE=[0-9]\+/HISTFILESIZE=/' .bashrc
 # sudo systemctl start vncserver-x11-serviced
 # sudo systemctl enable vncserver-x11-serviced
 sudo apt install virtualenv mpg321 libatlas-base-dev python-pyaudio portaudio19-dev libffi-dev python3-pyaudio -y
+sudo apt install libatlas3-base libopenblas-base -y
+# python3-numpy
