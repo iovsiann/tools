@@ -27,4 +27,4 @@ pip3 install numpy
 # sudo apt install avahi-daemon
 sudo systemctl disable avahi-daemon  # Bonjour local discovery http://raspberrypi.local
 sudo systemctl disable triggerhappy  # GUI shortcuts
-systemctl disable bluetooth
+# systemctl disable bluetooth
