@@ -1,6 +1,9 @@
 #!/bin/bash
 # Setup after a fresh install
 
+sudo apt update
+sudo apt upgrade
+
 git config --global user.name "Ilia O."
 git config --global credential.helper 'cache --timeout=7200'
 sed -i 's/HISTSIZE=[0-9]\+/HISTSIZE=/' .bashrc
