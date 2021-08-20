@@ -12,6 +12,8 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo ap
 sudo apt update
 sudo apt install ros-melodic-desktop-full -y
 
+# sudo apt install python-pip
+# pip install -U rosdep
 sudo rosdep init
 rosdep update
 
