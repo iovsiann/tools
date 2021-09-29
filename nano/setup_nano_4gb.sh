@@ -72,6 +72,9 @@ gsettings set org.gnome.Vino vnc-password $(echo -n 'thepassword'|base64)
 # sudo nano /etc/lightdm.conf/lightdm.conf.d
 # autologin-user=username
 
+# For Isaac SDK
+sudo apt install libzmq3-dev -y
+
 # Check Jetson info
 # git clone https://github.com/jetsonhacks/jetsonUtilities
 # cd jetsonUtilities
