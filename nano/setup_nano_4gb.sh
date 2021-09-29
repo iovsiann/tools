@@ -13,6 +13,10 @@ git clone https://github.com/Pyrestone/jetson-fan-ctl
 cd jetson-fan-ctl && sudo ./install.sh
 cd ~ && rm -rf jetson-fan-ctl
 
+# Disable JetPack updates
+# sudo gedit /etc/apt/sources.list.d/nvidia-l4t-apt-source.list
+# sudo apt update
+
 sudo apt update
 sudo apt install libncurses5-dev
 cd ~/Downloads
@@ -72,7 +76,3 @@ gsettings set org.gnome.Vino vnc-password $(echo -n 'thepassword'|base64)
 # git clone https://github.com/jetsonhacks/jetsonUtilities
 # cd jetsonUtilities
 # python jetsonInfo.py
-
-# Disable JetPack updates
-# sudo nano /etc/apt/sources.list.d/nvidia-l4t-apt-source.list
-# sudo apt update
