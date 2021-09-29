@@ -18,7 +18,7 @@ cd ~ && rm -rf jetson-fan-ctl
 # sudo apt update
 
 sudo apt update
-sudo apt install libncurses5-dev
+sudo apt install libncurses5-dev -y
 cd ~/Downloads
 wget http://www.nano-editor.org/dist/v2.4/nano-2.4.2.tar.gz
 tar -xzf nano-2.4.2.tar.gz
@@ -41,7 +41,8 @@ free -m
 sudo nvpmodel -m 0
 
 # Free up some extra RAM
-sudo apt autoremove --purge snapd
+sudo apt remove update-notifier -y
+sudo apt autoremove --purge snapd -y
 free -m
 
 # Select “LXDE” after boot at GUI login prompt
