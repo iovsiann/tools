@@ -37,9 +37,6 @@ git clone https://github.com/JetsonHacksNano/installSwapfile
 rm -rf installSwapfile
 free -m
 
-# Disable boot-to-GUI
-sudo systemctl set-default multi-user
-
 # Max power mode
 sudo nvpmodel -m 0
 
@@ -63,8 +60,10 @@ gsettings set org.gnome.Vino vnc-password $(echo -n 'thepassword'|base64)
 
 # Boot to shell prompt
 # sudo systemctl set-default multi-user.target
+
 # Boot to GUI
 # sudo systemctl set-default graphical.target
+
 # Launch GUI manually
 # sudo systemctl start gdm3.service
 
