@@ -60,6 +60,11 @@ gsettings set org.gnome.Vino vnc-password $(echo -n 'thepassword'|base64)
 # sudo nano /etc/lightdm.conf/lightdm.conf.d
 # autologin-user=username
 
+# Check Jetson info
+# git clone https://github.com/jetsonhacks/jetsonUtilities
+# cd jetsonUtilities
+# python jetsonInfo.py
+
 # Disable JetPack updates
 # sudo nano /etc/apt/sources.list.d/nvidia-l4t-apt-source.list
 # sudo apt update
