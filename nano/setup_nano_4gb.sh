@@ -1,6 +1,14 @@
 #!/bin/bash
 
 cd
+rm examples.desktop
+rmdir Public
+rmdir Templates
+rmdir Videos
+rmdir Documents
+rmdir Music
+rmdir Pictures
+
 git clone https://github.com/Pyrestone/jetson-fan-ctl
 cd jetson-fan-ctl && sudo ./install.sh
 cd ~ && rm -rf jetson-fan-ctl
