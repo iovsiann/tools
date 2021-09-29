@@ -58,3 +58,7 @@ gsettings set org.gnome.Vino vnc-password $(echo -n 'thepassword'|base64)
 # Enable/disable LightDM autologin
 # sudo nano /etc/lightdm.conf/lightdm.conf.d
 # autologin-user=username
+
+# Disable JetPack updates
+# sudo nano /etc/apt/sources.list.d/nvidia-l4t-apt-source.list
+# sudo apt update
