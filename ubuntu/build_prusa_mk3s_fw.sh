@@ -12,4 +12,5 @@ cp variants/1_75mm_MK3S-EINSy10a-E3Dv6full.h Configuration_prusa.h
 cd ~/prusa/Prusa-Firmware; ./build.sh
 
 # Copy “firmware.hex” to 
-nautilus --browser ~/prusa/Prusa-Firmware/lang/
+# nautilus --browser ~/prusa/Prusa-Firmware/lang/
+cd ~/prusa/Prusa-Firmware/lang/
